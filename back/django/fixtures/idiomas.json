@@ -1,0 +1,362 @@
+[
+{
+    "model": "general.idiomas",
+    "pk": 7,
+    "fields": {
+        "codigo": "ar",
+        "nombre": "Árabe"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 12,
+    "fields": {
+        "codigo": "be",
+        "nombre": "Bielorruso"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 14,
+    "fields": {
+        "codigo": "bg",
+        "nombre": "Bélgaro"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 16,
+    "fields": {
+        "codigo": "ca",
+        "nombre": "Catalán"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 18,
+    "fields": {
+        "codigo": "cs",
+        "nombre": "Checo"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 20,
+    "fields": {
+        "codigo": "da",
+        "nombre": "Danés"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 22,
+    "fields": {
+        "codigo": "de",
+        "nombre": "Alemán"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 27,
+    "fields": {
+        "codigo": "el",
+        "nombre": "Griego"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 30,
+    "fields": {
+        "codigo": "en",
+        "nombre": "Inglés"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 42,
+    "fields": {
+        "codigo": "es",
+        "nombre": "Español"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 63,
+    "fields": {
+        "codigo": "et",
+        "nombre": "Estonio"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 65,
+    "fields": {
+        "codigo": "fi",
+        "nombre": "Finés"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 67,
+    "fields": {
+        "codigo": "fr",
+        "nombre": "Francés"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 73,
+    "fields": {
+        "codigo": "ga",
+        "nombre": "Irlandés"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 75,
+    "fields": {
+        "codigo": "hi",
+        "nombre": "Hindé"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 76,
+    "fields": {
+        "codigo": "hr",
+        "nombre": "Croata"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 78,
+    "fields": {
+        "codigo": "hu",
+        "nombre": "Héngaro"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 80,
+    "fields": {
+        "codigo": "in",
+        "nombre": "Indonesio"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 82,
+    "fields": {
+        "codigo": "is",
+        "nombre": "Islandés"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 84,
+    "fields": {
+        "codigo": "it",
+        "nombre": "Italiano"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 87,
+    "fields": {
+        "codigo": "iw",
+        "nombre": "Hebreo"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 89,
+    "fields": {
+        "codigo": "ja",
+        "nombre": "Japonés"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 92,
+    "fields": {
+        "codigo": "ko",
+        "nombre": "Coreano"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 94,
+    "fields": {
+        "codigo": "lt",
+        "nombre": "Lituano"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 96,
+    "fields": {
+        "codigo": "lv",
+        "nombre": "Letón"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 98,
+    "fields": {
+        "codigo": "mk",
+        "nombre": "Macedonio"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 100,
+    "fields": {
+        "codigo": "ms",
+        "nombre": "Malayo"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 102,
+    "fields": {
+        "codigo": "mt",
+        "nombre": "Maltés"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 104,
+    "fields": {
+        "codigo": "nl",
+        "nombre": "Neerlandés"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 107,
+    "fields": {
+        "codigo": "no",
+        "nombre": "Noruego"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 110,
+    "fields": {
+        "codigo": "pl",
+        "nombre": "Polaco"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 112,
+    "fields": {
+        "codigo": "pt",
+        "nombre": "Portugués"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 115,
+    "fields": {
+        "codigo": "ro",
+        "nombre": "Rumano"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 117,
+    "fields": {
+        "codigo": "ru",
+        "nombre": "Ruso"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 119,
+    "fields": {
+        "codigo": "sk",
+        "nombre": "Eslovaco"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 121,
+    "fields": {
+        "codigo": "sl",
+        "nombre": "Eslovenio"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 123,
+    "fields": {
+        "codigo": "sq",
+        "nombre": "Albanés"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 125,
+    "fields": {
+        "codigo": "sr",
+        "nombre": "Serbio"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 130,
+    "fields": {
+        "codigo": "sv",
+        "nombre": "Sueco"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 132,
+    "fields": {
+        "codigo": "th",
+        "nombre": "Tailandés"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 135,
+    "fields": {
+        "codigo": "tr",
+        "nombre": "Turco"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 137,
+    "fields": {
+        "codigo": "uk",
+        "nombre": "Ucranio"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 139,
+    "fields": {
+        "codigo": "vi",
+        "nombre": "Vietnamita"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 141,
+    "fields": {
+        "codigo": "zh",
+        "nombre": "Chino"
+    }
+},
+{
+    "model": "general.idiomas",
+    "pk": 143,
+    "fields": {
+        "codigo": "zh-hk",
+        "nombre": "Chino (Hong Kong)"
+    }
+}
+]

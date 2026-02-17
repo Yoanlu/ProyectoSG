@@ -1,0 +1,32 @@
+:local(.contenedorEntradaImagen) {
+    display: inline-grid;
+}
+
+:local(.contenedorBotonesEntradaImagen) {
+    margin-top: 10px;
+}
+
+:local(.imagen) {
+    vertical-align: bottom;
+    margin: auto;
+    height: auto;
+    width: auto;
+    max-height: 150px;
+    max-width: 250px;
+    cursor: pointer;
+}
+
+button:local(.botonDerecho) {
+    margin-left: auto;
+}
+
+form[disabled] :local(.boton),
+fieldset[disabled] :local(.boton),
+:local(.entradaFichero) {
+    display: none;
+}
+
+:global(.soloLectura) :local(.boton) {
+    pointer-events: none;
+    opacity: 0.6;
+}

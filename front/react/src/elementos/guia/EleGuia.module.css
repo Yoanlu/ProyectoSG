@@ -1,0 +1,15 @@
+:local(.breadcrumps) {
+    padding: 10px 20px;
+}
+
+:local(.breadcrump) {
+    cursor: pointer;
+}
+
+:local(.activo) {
+    font-weight: bolder;
+}
+
+:local(.breadcrump):hover {
+    text-decoration: underline;
+}

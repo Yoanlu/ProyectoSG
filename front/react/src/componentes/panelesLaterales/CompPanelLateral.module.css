@@ -1,0 +1,28 @@
+:local(.panelPc),
+:local(.contenedorPanelPc),
+:local(.panelLateralMovil) > div > nav {
+    width: 200px;
+}
+
+:local(.panelLateralMovil) {
+    z-index: 1500 !important;
+}
+
+:local(.contenedorPanelPc) {
+    will-change: transition;
+    transition: margin 300ms ease;
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+    z-index: 0;
+}
+
+:local(.panelPc) {
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+:local(.panelPcCerrado) {
+    margin-left: -200px;
+}

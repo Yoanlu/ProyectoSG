@@ -1,0 +1,17 @@
+
+:local(.modoHorizontal) {
+    display: flex;
+    flex-direction: row;
+}
+
+:local(.centrado) {
+    width: 100%;
+}
+
+:local(.centrado) :local(.contenedorInterruptor) {
+    margin: auto;
+}
+
+:local(.formGroup) {
+    margin-top: -10px;
+}

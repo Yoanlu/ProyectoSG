@@ -1,0 +1,13 @@
+:local(.color) {
+    width: 18px;
+    height: 18px;
+    float: left;
+    border-radius: 100%;
+    margin-right: 10px;
+    border: 0.5px solid grey;
+}
+
+
+:local(.tablaBase) tbody  {
+    background-color: rgba(199, 21, 21, 0.25) !important;
+}

@@ -1,0 +1,33 @@
+:local(.formControl) {
+    width: 100%;
+}
+
+fieldset[disabled] :local(.formControl) {
+    pointer-events: none;
+    /* opacity: 0.6; */
+}
+
+*[disabled] :local(.desplegable) > div {
+    cursor: default;
+}
+
+*[disabled] :local(.desplegable) > div > div {
+    pointer-events: none;
+}
+
+:local(.contenedorCheck) {
+    padding: 4px;
+    padding-right: 12px;
+}
+
+div:local(.tagDesplegable) {
+    margin-right: 5px;
+}
+
+:local(.desplegableCerrado) {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+    max-width: calc(100% - 45px);
+}

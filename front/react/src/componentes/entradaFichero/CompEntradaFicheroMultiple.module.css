@@ -1,0 +1,33 @@
+:local(.contenedorEntradaFichero) {
+    display: inline-grid;
+    width: 100%;
+}
+
+form[disabled] :local(.boton),
+fieldset[disabled] :local(.boton),
+:local(.entradaFichero) {
+    display: none;
+}
+
+button:local(.boton) {
+    margin: auto;
+}
+
+:global(.soloLectura) :local(.boton) {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+:local(.contenedorFicheros) {
+    overflow-y: auto;
+    max-height: 400px;
+    margin-top: 7px;
+}
+
+:local(.contenidoFichero) + :local(.contenidoFichero) {
+    margin-top: 7px;
+}
+
+:local(.nombreFichero) {
+    margin-left: 7px;
+}

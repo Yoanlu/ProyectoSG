@@ -1,0 +1,15 @@
+div:local(.formularioControl) {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+:local(.texto) input[type='date'] {
+    text-align: center;
+    padding-top: 4px;
+}
+
+:local(.texto) input[type='number'],
+:local(.tipoNumero) input[type='text'] {
+    text-align: right;
+}

@@ -1,0 +1,52 @@
+:local(.contenedorFirma) {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+:global(.signatureCanvas) {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 940px) {
+    :global(.signatureCanvas) {
+        width: 400px;
+        height: 200px;
+    }
+
+    :local(.botonFirma) {
+        max-width: 200px;
+        width: 100%;
+    }
+}
+
+:local(.iconoBotonFirma) {
+    font-size: 2rem;
+    padding: 15px 10px;
+    padding-right: 20px;
+}
+
+:local(.botonFirma) {
+    position: relative;
+    overflow: hidden;
+    color: white !important;
+    font-weight: bolder;
+    width: 300px;
+}
+
+:local(.botonFirma)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -100%;
+    bottom: -100%;
+    left: -10%;
+    width: 55%;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: rotateZ(20deg);
+}

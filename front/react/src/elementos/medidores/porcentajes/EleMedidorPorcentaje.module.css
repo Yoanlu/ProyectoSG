@@ -1,0 +1,68 @@
+:local(.contenedorMedidor) {
+    width: 100%;
+    margin-top: 3px;
+}
+:local(.contenedorMedidor) div {
+    width: 12.5%;
+    height: 4px;
+    float: left;
+}
+
+:local(.nivel1a) {
+    background-image: linear-gradient(to right, red, rgb(238, 123, 94));
+}
+:local(.nivel1b) {
+    background-image: linear-gradient(
+        to right,
+        rgb(238, 123, 94),
+        rgb(245, 195, 121)
+    );
+}
+
+:local(.nivel2a) {
+    background-image: linear-gradient(
+        to right,
+        rgb(245, 195, 121),
+        rgb(245, 222, 121)
+    );
+}
+
+:local(.nivel2b) {
+    background-image: linear-gradient(
+        to right,
+        rgb(245, 222, 121),
+        rgb(240, 227, 45)
+    );
+}
+
+:local(.nivel3a) {
+    background-image: linear-gradient(
+        to right,
+        rgb(240, 227, 45),
+        rgb(237, 240, 45)
+    );
+}
+
+:local(.nivel3b) {
+    background-image: linear-gradient(
+        to right,
+        rgb(237, 240, 45),
+        rgb(211, 240, 45)
+    );
+}
+
+:local(.nivel4a) {
+    background-image: linear-gradient(
+        to right,
+        rgb(211, 240, 45),
+        rgb(172, 240, 45)
+    );
+}
+
+:local(.nivel4b) {
+    background-image: linear-gradient(
+        to right,
+        rgb(172, 240, 45),
+        rgb(87, 218, 36)
+    );
+}

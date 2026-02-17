@@ -1,0 +1,19 @@
+
+
+:local(.contenedorEntradaCirculoColor) button {
+    min-width: 1px !important;
+    min-height: 1px !important;    
+    right: 0px;
+    top: 0px;
+}
+
+:local(.botonSeleccionColor) {
+    padding: 0px !important;
+    height: 24px !important;
+    width: 24px !important;
+    min-width: none !important;
+    min-height: none !important;
+    border-radius: 50% !important;
+    box-shadow: none !important;
+    border: 0.5px solid grey !important;
+}

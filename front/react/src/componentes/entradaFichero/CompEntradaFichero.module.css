@@ -1,0 +1,32 @@
+form[disabled] :local(.boton):not(.fichero),
+fieldset[disabled] :local(.boton):not(.fichero),
+:local(.entradaFichero) {
+    display: none;
+}
+
+:local(.contenedorEntradaFichero) {
+    display: inline-grid;
+    width: 100%;
+}
+
+:global(.soloLectura) :local(.contenedorEntradaFichero) {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+:local(.enlace) {
+    text-decoration: none;
+    color: inherit;
+}
+
+:local(.colorPdf) {
+    color: #e73e33;
+}
+
+:local(.colorExcel) {
+    color: green;
+}
+
+:local(.colorWord) {
+    color: blue;
+}

@@ -1,0 +1,14 @@
+
+:local(.textoSubtotales) {
+    color: grey;
+    font-size: 0.7rem;
+}
+
+:local(.contenedorOpciones) {
+    text-align: center;
+}
+
+:local(.botonIcono) span {
+    font-size: 1.25rem;
+    overflow: visible;
+}

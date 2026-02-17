@@ -1,0 +1,25 @@
+:local(.aplicacion) {
+    height: calc(100dvh - 64px);
+    margin-top: 64px;
+    will-change: transition;
+    transition: margin 300ms ease;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+:global(.grecaptcha-badge) {
+    visibility: hidden !important;
+}
+
+:local(.aplicacionNavAbierto) {
+    margin-left: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    :local(.aplicacion) {
+        height: calc(100dvh - 48px);
+        margin-top: 48px;
+    }
+}

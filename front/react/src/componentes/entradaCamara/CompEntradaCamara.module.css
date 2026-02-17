@@ -1,0 +1,176 @@
+.contenedorCamara {
+    width: 100%;
+    max-width: 198px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.contenedorCamara h6 {
+    margin: 0 0 4px 0;
+}
+
+.contenedorVideo {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedorBotones {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    z-index: 10;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.contenedorBotones button {
+    min-width: 45px;
+    height: 16px;
+    padding: 2px 8px;
+    display: block;
+    opacity: 1;
+}
+
+.contenedorPreview {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 2px;
+    max-height: 162px;
+}
+
+.preview {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.2s;
+}
+
+.preview:hover {
+    transform: scale(1.05);
+}
+
+.contenedorBotonInicial {
+    position: relative;
+    z-index: 2;
+}
+
+.contenedorBotonInicial button {
+    min-width: 45px;
+    height: 16px;
+    padding: 2px 8px;
+}
+
+.botonAccion {
+    min-width: 40px !important;
+    height: 14px !important;
+    font-size: 0.6em !important;
+    padding: 2px 6px !important;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContenido {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.imagenModal {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.modalContenido .contenedorBotones button {
+    min-width: 70px !important;
+    height: 24px !important;
+    font-size: 1em !important;
+    padding: 4px 10px !important;
+}
+
+@media (max-width: 768px) {
+    .contenedorCamara {
+        max-width: 100%;
+    }
+    
+    .contenedorPreview {
+        max-height: 135px;
+    }
+    
+    .botonAccion {
+        min-width: 35px !important;
+        font-size: 0.52em !important;
+        height: 14px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedorBotones {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contenedorBotones button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .modalContenido {
+        padding: 10px;
+    }
+    
+    .imagenModal {
+        max-height: 60vh;
+    }
+}
+
+.videoModal {
+    width: 100%;
+    max-width: 640px; /* Puedes ajustar este valor según necesites */
+    margin: 0 auto;
+} 

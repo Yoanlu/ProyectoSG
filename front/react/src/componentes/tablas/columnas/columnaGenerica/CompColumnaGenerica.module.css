@@ -1,0 +1,24 @@
+:local(.modoConsulta) {
+    color: gray;
+}
+
+:local(.saltosDeLinea) {
+    /* font-weight: bold; */
+    white-space: pre-line;
+    display: block;
+}
+
+:local(.filaSpan) {
+    word-wrap: break-word;
+}
+
+/* :local(.saltosDeLinea)::first-line {
+    font-weight: initial;
+} */
+
+
+:local(.contenedorNumero) {
+    width: 100%;
+    text-align: right;
+    display: inline;
+}

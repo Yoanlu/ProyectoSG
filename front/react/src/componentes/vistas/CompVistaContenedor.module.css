@@ -1,0 +1,10 @@
+:local(.mensajePlano) {
+    white-space: pre-line;
+}
+
+:local(.iframe) {
+    width: 100%;
+    border: none;
+    min-height: 75vh;
+    height: auto;
+}

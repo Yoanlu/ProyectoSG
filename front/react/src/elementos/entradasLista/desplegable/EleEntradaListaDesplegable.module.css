@@ -1,0 +1,7 @@
+:local(.formControl) {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+

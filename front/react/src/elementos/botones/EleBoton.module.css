@@ -1,0 +1,7 @@
+:local(.cargando) {
+    position: absolute;
+}
+
+button:local(.fab) {
+    z-index: 200;
+}

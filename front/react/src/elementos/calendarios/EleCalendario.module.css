@@ -1,0 +1,68 @@
+:local(.diaseleccionado) {
+    box-shadow: 2px 1px 4px 0.25px gray;
+    width: 39px !important;
+    height: 39px !important;
+    line-height: 39px !important;
+    margin: 3px;
+}
+:local(.contenedor) {
+    margin: 5px 30px 5px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-color: gray;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 0.4%;
+}
+:local(.cabecera) {
+    flex-basis: 100%;
+}
+:local(.leyenda) {
+    border-style: solid;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    margin-top: 6px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+:local(.item) {
+    text-align: center;
+    font-size: 1em;
+    flex-basis: 14.28571%;
+}
+:local(.dia) {
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+}
+:local(.diaseleccionable) {
+    cursor: pointer;
+}
+
+:local(.offset1) {
+    margin-left: 14.28571%;
+}
+:local(.offset2) {
+    margin-left: 28.57142%;
+}
+:local(.offset3) {
+    margin-left: 42.85714%;
+}
+:local(.offset4) {
+    margin-left: 57.14285%;
+}
+:local(.offset5) {
+    margin-left: 71.42857%;
+}
+:local(.offset6) {
+    margin-left: 85.71428%;
+}
+
+:local(.contenedortextos) {
+    width: 100%;
+}

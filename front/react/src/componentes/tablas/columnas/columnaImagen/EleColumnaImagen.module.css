@@ -1,0 +1,8 @@
+:local(.imagen) {
+    height: auto;
+    width: auto;
+    max-height: 55px;
+    max-width: 125px;
+    display: block;
+    margin: -10px auto;
+}

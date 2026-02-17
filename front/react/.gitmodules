@@ -1,0 +1,6 @@
+[submodule "src/elementos"]
+	path = src/elementos
+	url = https://git.sandavteam.com/React/elementos.git
+[submodule "src/componentes"]
+	path = src/componentes
+	url = https://git.sandavteam.com/React/componentes.git

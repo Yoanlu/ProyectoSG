@@ -1,0 +1,61 @@
+:local(.contenedorPlugins) {
+    position: relative;
+    /* height: 48px; */
+}
+
+:local(.contenedorCargando) {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+:local(.contenedorCargando) :local(.cargando) {
+    position: absolute;
+    width: 100%;
+    top: -4px;
+    text-align: center;
+}
+
+:local(.panel) {
+    height: 100%;
+    padding-bottom: 48px;
+}
+
+:local(.contenedorAnimacion) {
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+:local(.contenedorNavegacion) {
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+:local(.lista),
+:local(.mantenimiento) {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+:local(.lista) {
+    z-index: 1;
+    bottom: 0;
+}
+
+:local(.contenedorVisible) {
+    animation-fill-mode: unset !important;
+}
+
+:local(.contenedorConNavegacion) {
+    min-height: 350px;
+}
+
+:local(.separacionEntreBotones+.separacionEntreBotones) {
+    margin-left: 10px !important;
+}

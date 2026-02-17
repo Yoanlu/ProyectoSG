@@ -1,0 +1,145 @@
+div:local(.panelFormulario) {
+    margin: auto;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+:local(.contenedorMant) :global(.contenedorFijoBarraAppTab) > header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    pointer-events: all;
+}
+
+:local(.barraBotonesFabs) {
+    border: none;
+    margin: 0;
+    padding: 15px;
+    text-align: right;
+    position: relative;
+    z-index: 100;
+}
+
+:local(.barraBotones),
+:local(.fieldset),
+:local(.mantenimiento) {
+    border: none;
+    margin: 0;
+}
+
+:local(.mantContenedor) {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+:local(.fieldset) {
+    display: contents;
+    padding: 0;
+}
+
+:local(.fieldset)[disabled] * {
+    pointer-events: none;
+}
+
+:local(.fieldset)[disabled] a,
+:local(.fieldset)[disabled] button * {
+    pointer-events: all;
+}
+
+:local(.barraBotones),
+:local(.mantenimientoSimple) {
+    padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    :local(.barraBotones),
+    :local(.mantenimientoSimple) {
+        padding: 5px;
+    }
+}
+
+:local(.mantenimientoSimple) {
+    padding-bottom: 0;
+}
+
+:local(.cargando) {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+:local(.cargandoVisible) {
+    display: block;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+:local(.contenedorCargaFlotante) {
+    position: absolute;
+    display: none;
+    width: fit-content;
+    pointer-events: none;
+    z-index: 1000;
+    max-width: 100px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+:local(.contenedorCargaFlotanteVisible) {
+    display: block;
+}
+
+:local(.contenedorFabs),
+:local(.contenedorFabsPrev),
+:local(.contenedorFabsPrevCrud) {
+    position: absolute;
+    left: 30px;
+    pointer-events: none;
+    z-index: 1000;
+    top: 30px;
+    max-width: 100px;
+}
+
+.barraBotones {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    /* box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); */
+    margin-top: 40px;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.botonesWrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 8px; */
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.cargando {
+    margin-right: auto;
+    order: -1;
+}
+
+:global(.sinPanel) {
+    min-height: calc(100dvh - 170px);
+}
+
+:local(.mantenimiento),
+:local(.mantenimientoSimple) {
+    position: relative;
+    z-index: 1;
+}

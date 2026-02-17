@@ -1,0 +1,20 @@
+:local(.fieldset) {
+    display: contents;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+:global(.soloLectura) :local(.contenedorBotonesEdicion) {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+:local(.panelMant) {
+    padding: 2px;
+}
+
+:local(.botonera) {
+    margin-top: 10px;
+    text-align: center;
+}

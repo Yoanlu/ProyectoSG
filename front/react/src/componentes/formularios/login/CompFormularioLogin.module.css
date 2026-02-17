@@ -1,0 +1,90 @@
+:local(.cabecera),
+:local(.mensajeError) {
+    text-align: center;
+}
+
+:local(.mensajeError) {
+    margin-top: 15px;
+}
+
+:local(.compPanelLogin) {
+    max-width: 350px;
+    margin: 5% auto;
+    margin-bottom: 0;
+}
+
+:local(.formulario) {
+    font-size: 14px;
+    line-height: 2;
+    padding: 20px;
+}
+
+:local(.botonLogin) {
+    width: 100%;
+    font-weight: bold;
+}
+
+:local(.iconoLogin) {
+    margin-left: 5px;
+}
+
+:local(.logo) {
+    max-height: 150px;
+    max-width: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+:local(.iconoReset) {
+    margin-top: 15px !important;
+}
+
+:local(.reset) {
+    padding-top: 15px;
+}
+
+:local(.reset) a {
+    color: inherit;
+}
+
+:local(.rotar) {
+    animation: spin 5s linear infinite;
+}
+
+:local(.olvidadoPass) {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :local(.logo) {
+        max-height: 80px;
+        margin-bottom: 0px;
+    }
+
+    :local(.formulario) {
+        padding: 15px;
+    }
+
+    :local(.mensajeError) {
+        margin-top: 8px;
+    }
+}

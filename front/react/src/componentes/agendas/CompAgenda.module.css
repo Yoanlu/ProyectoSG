@@ -1,0 +1,100 @@
+:local(.contenedorScheduler) > div:nth-child(2) {
+    height: auto;
+}
+
+:local(.evento) {
+    padding: 0.1em 0.5em;
+    margin: 2px 5px;
+    cursor: pointer;
+}
+
+:local(.contenedorEventosDia) {
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+:local(.capital) {
+    text-transform: capitalize;
+}
+
+:local(.nombreDia) {
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bolder !important;
+    text-transform: capitalize;
+}
+
+:local(.cell) {
+    padding: 0 !important;
+    vertical-align: top !important;
+}
+
+:local(.contenedorDia) {
+    position: relative;
+    height: inherit;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    cursor: cell;
+    height: auto;
+}
+
+:local(.hoy) {
+    width: 24px;
+    margin: 4px;
+    height: 24px;
+    cursor: default;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50%;
+    color: grey !important
+}
+
+:local(.toolbar) {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+}
+
+:local(.toolbarAgenda) {
+    display: flex;
+    min-width: 275px;
+    flex-direction: row;
+}
+
+:local(.botonMes) {
+    min-width: 100px;
+}
+
+:local(.desactivado) :local(.evento),
+:local(.desactivado) :local(.contenedorDia) {
+    cursor: not-allowed;
+}
+
+:local(.verComentario),
+:local(.nuevoComentario) {
+    padding-top: 6px;
+    display: inline-block;
+    width: 30px;
+    position: absolute;
+    right: 2px;
+}
+
+:local(.verComentario) {
+    cursor: pointer;
+}
+
+:local(.nuevoComentario) {
+    cursor: copy;
+}
+
+
+
+:local(.copia) {
+    padding-top: 6px;
+    display: inline-block;
+    width: 30px;
+    /* position: absolute; */
+    right: 2px;
+}

@@ -1,0 +1,37 @@
+:local(.fieldset) {
+    display: contents;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+:global(.soloLectura) :local(.fieldset) {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+:local(.fondo) {
+    backdrop-filter: blur(3px);
+}
+
+:local(.contenedorBotones) {
+    position: relative;
+}
+
+:local(.cargando) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+:local(.borrar) {
+    margin-right: auto !important;
+}
+
+:local(.invisible) {
+    visibility: hidden;
+    height: 0;
+}

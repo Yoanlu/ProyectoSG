@@ -1,0 +1,39 @@
+:local(.lista) {
+    width: 100%;
+}
+
+:local(.elementoLista) {
+    width: inherit;
+    display: inherit;
+}
+
+:local(.elementoLista) * {
+    font-weight: bold !important;
+}
+
+:local(.contenedorItem) > span {
+    font-size: 1em;
+}
+
+:local(.elementoListaInline) {
+    margin-left: 30px !important;
+    width: auto !important;
+}
+
+:local(.separadorInline) {
+    margin-left: 30px !important;
+}
+
+:local(.listItemSeleccionado) * {
+    font-weight: normal !important;
+}
+
+:local(.iconoLista) {
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+:local(.iconoExpansion) {
+    position: absolute;
+    right: 10px;
+}

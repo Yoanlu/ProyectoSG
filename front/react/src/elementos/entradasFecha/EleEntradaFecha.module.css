@@ -1,0 +1,65 @@
+div:local(.formularioControl) {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+input[type='date'] {
+    text-align: center;
+}
+
+/* chrome */
+input[type='date']::-webkit-date-edit {
+    color: transparent;
+}
+input[type='date']::-webkit-date-edit-month-field {
+    color: transparent;
+}
+input[type='date']::-webkit-date-edit-day-field {
+    color: transparent;
+}
+input[type='date']::-webkit-date-edit-year-field {
+    color: transparent;
+}
+
+/* FireFox */
+input[type='date']::-moz-date-edit {
+    color: transparent;
+}
+input[type='date']::-moz-date-edit-month-field {
+    color: transparent;
+}
+input[type='date']::-moz-date-edit-day-field {
+    color: transparent;
+}
+input[type='date']::-moz-date-edit-year-field {
+    color: transparent;
+}
+
+/* Edge */
+input[type='date']::-ms-date-edit {
+    color: transparent;
+}
+input[type='date']::-ms-date-edit-month-field {
+    color: transparent;
+}
+input[type='date']::-ms-date-edit-day-field {
+    color: transparent;
+}
+input[type='date']::-ms-date-edit-year-field {
+    color: transparent;
+}
+
+/* Opera */
+input[type='date']::-o-date-edit {
+    color: transparent;
+}
+input[type='date']::-o-date-edit-month-field {
+    color: transparent;
+}
+input[type='date']::-o-date-edit-day-field {
+    color: transparent;
+}
+input[type='date']::-o-date-edit-year-field {
+    color: transparent;
+}

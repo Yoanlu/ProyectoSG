@@ -1,0 +1,34 @@
+:local(.columna) {
+    margin-right: auto;
+}
+
+:local(.columna),
+:local(.contenedorFlecha) {
+    cursor: pointer;
+}
+
+:local(.contenedorFlecha) {
+    position: absolute;
+    margin-left: 3px;
+    margin-top: -4px;
+}
+
+:local(.flecha) {
+    font-size: 16px !important;
+    opacity: 0;
+    transform: rotate(180deg);
+    transition-property: opacity, transform;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+}
+
+:local(.ascendente),
+:local(.descendente) {
+    top: 2px;
+    opacity: 1;
+}
+
+:local(.ascendente) {
+    transform: rotate(0deg);
+}

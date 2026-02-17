@@ -1,0 +1,30 @@
+:local(.gridRoot),
+:local(.gridRoot) > div {
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+:local(.campoBuscar) {
+    max-width: 350px;
+}
+
+:local(.tablaBase) tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+/* :local(.tablaBase) tbody  {
+    background-color: rgba(199, 21, 21, 0.25) !important;
+} */
+
+:local(.tablaBase) tbody tr td > div {
+    background-color: transparent !important;
+}
+
+:local(.selecClick) tbody tr:hover {
+    cursor: pointer;
+}
+
+:local(.contenedorLeyenda) {
+    position: relative;
+}

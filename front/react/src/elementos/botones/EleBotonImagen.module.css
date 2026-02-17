@@ -1,0 +1,11 @@
+:local(.sombraBoton) {
+    text-shadow: 1px 1px 0.5px rgb(34, 34, 34);
+}
+
+:local(.sombraBotonDesactivado) {
+    text-shadow: 1px 1px 0.5px rgb(34, 34, 34, 0.3);
+}
+
+button :local(.smallIcon) {
+    font-size: 1.4rem;
+}

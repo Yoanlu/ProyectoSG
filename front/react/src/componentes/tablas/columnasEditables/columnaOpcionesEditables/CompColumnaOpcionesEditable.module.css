@@ -1,0 +1,8 @@
+:local(.contenedorIcono) {
+    text-align: center;
+    height: 0;
+}
+
+:local(.contenedorIcono) > * {
+    top: -22px;
+}

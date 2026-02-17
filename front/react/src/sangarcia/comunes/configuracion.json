@@ -1,0 +1,42 @@
+{
+    "dominioDesarrollo": {
+        "servidor": "127.0.0.1",
+        "puerto": ":7000"
+    },
+
+    "authApp": {
+        "client_secret": "bx83oWdRST9zNLZiVnuuuNZdh2l3NiDhKO9FRgNYub25i9MielaKXIOaG2yFwJnQM1eDUpoeUY2MKYIU5P85XhQLoirOjYJALDtZEW6sXQn7cN1YmpEyllk9ewl0npBP",
+        "client_id": "rhEIbHy7tPhur4ajgoZDg0CS5rA4lkNcEQZlVRGJ"
+    },
+
+    "opcionesTema": [
+        {
+            "titulo": "Material UI",
+            "ruta": "#3f51b5",
+            "secundario": "#2196f3",
+            "interpolado": false,
+            "degradado": true
+        },
+        {
+            "titulo": "Sandav",
+            "ruta": "#e70f47",
+            "secundario": "#5cc8ec",
+            "interpolado": true,
+            "degradado": true
+        }
+    ],
+    
+    "opcionesIdiomas": [
+        {
+            "titulo": "languages.english",
+            "ruta": "en-EN"
+        },
+        {
+            "titulo": "languages.spanish",
+            "ruta": "es-ES"
+        }
+    ],
+
+    "puntoFinalTraducciones": "general/traducciones/",
+    "puntoFinalIdiomas": "general/idiomas/"
+}

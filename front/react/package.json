@@ -1,0 +1,101 @@
+{
+    "name": "sangarcia",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "packageManager": "yarn@1.22.22",
+    "dependencies": {
+        "@devexpress/dx-react-core": "^4.0.3",
+        "@devexpress/dx-react-grid": "^4.0.3",
+        "@devexpress/dx-react-grid-export": "^4.0.3",
+        "@devexpress/dx-react-grid-material-ui": "^4.0.3",
+        "@devexpress/dx-react-scheduler": "^4.0.3",
+        "@devexpress/dx-react-scheduler-material-ui": "^4.0.3",
+        "@emotion/react": "^11.10.6",
+        "@emotion/styled": "^11.10.6",
+        "@mui/icons-material": "^5.11.11",
+        "@mui/material": "^5.11.11",
+        "@mui/styles": "^5.11.11",
+        "@mui/x-date-pickers": "^6.0.0",
+        "animate.css": "^3.7.0",
+        "devextreme": "24.1.8",
+        "devextreme-react": "24.1.8",
+        "esbuild": "^0.17.19",
+        "esbuild-css-modules-plugin": "^2.6.2",
+        "file-saver": "^2.0.5",
+        "fs-extra": "^10.1.0",
+        "html2pdf.js": "^0.10.1",
+        "i18next": "^20.0.0",
+        "i18next-browser-languagedetector": "^6.1.0",
+        "i18next-xhr-backend": "^3.2.2",
+        "jodit-react-ts": "^0.9.0",
+        "moment": "^2.29.1",
+        "postcss": "^8.4.18",
+        "prop-types": "^15.8.1",
+        "react": "^18.2.0",
+        "react-color": "^2.19.3",
+        "react-dom": "^18.2.0",
+        "react-google-maps": "^9.4.5",
+        "react-google-material-icons": "^1.0.4",
+        "react-i18next": "^9.0.10",
+        "react-number-format": "^4.5.1",
+        "react-recaptcha-v3": "^2.0.1",
+        "react-router-dom": "^5.2.0",
+        "react-text-mask": "^5.4.3",
+        "zxcvbn": "^4.4.2"
+    },
+    "lint-staged": {
+        "src/**/*.{js,jsx,json,css}": [
+            "prettier --double-quote --write --tab-width 4 --print-width 160 --eol=lf",
+            "git add"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "scripts": {
+        "generate-version": "node ./src/componentes/scripts/generate-build-version",
+        "prebuild": "npm run generate-version",
+        "pre-commit": "lint-staged",
+        "lint": "eslint \"src/**/*.{js,jsx}\" --max-warnings=0",
+        "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+        "build": "node ./src/componentes/scripts/build.js",
+        "dev": "node ./src/componentes/scripts/dev.js --port=3000",
+        "start": "npm run dev"
+    },
+    " jest ": {
+        " automock ": true,
+        " setupFiles ": [
+            "/src/prepararJest.js"
+        ],
+        "setupTestFrameworkScriptFile": "<rootDir>/src/prepararJest.js"
+    },
+    "devDependencies": {
+        "chokidar": "^3.5.3",
+        "fetch-mock": "^7.1.0",
+        "husky": "^1.3.1",
+        "jest-dom": "^1.12.0",
+        "jest-fetch-mock": "^1.6.6",
+        "jest-localstorage-mock": "^2.3.0",
+        "lint-staged": "^8.1.5",
+        "live-server": "^1.2.2",
+        "node-fetch": "^2.2.0",
+        "prettier": "^1.16.4",
+        "react-testing-library": "^5.0.0",
+        "redux": "^4.0.1",
+        "redux-mock-store": "^1.5.3",
+        "redux-thunk": "^2.3.0",
+        "uglify-js-brunch": "^2.10.0"
+    },
+    "overrides": {
+        "chokidar": "^3.5.3"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ]
+}

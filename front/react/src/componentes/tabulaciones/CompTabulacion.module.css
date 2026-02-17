@@ -1,0 +1,81 @@
+:local(.tab) {
+    display: contents;
+}
+
+:local(.step) {
+    margin: auto;
+}
+
+:local(.asistente) {
+    margin: auto;
+    padding: 20px 10% !important;
+}
+
+:local(.tabClasico) button:local(.solapa),
+:local(.tabCentrado) button:local(.solapa) {
+    font-weight: bold;
+    padding: 6px 8px;
+    text-shadow: 1px 1px 1px rgba(80, 80, 80, 0.473);
+}
+
+@media screen and (max-width: 1280px) {
+    :local(.botonTab) {
+        display: none;
+    }
+    
+    :local(.asistente) {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :local(.asistente) {
+        width: 100%;
+    }
+}
+
+:local(.oculto) {
+    overflow: hidden;
+    border: none;
+    height: 0;
+    padding: 0;
+}
+
+:local(.contenedorTab) {
+    padding: 15px 10px;
+    padding-bottom: 0;
+    overflow-x: auto;
+}
+
+:local(.contenedorBarraAppTab) {
+    position: relative;
+    max-width: 100%;
+    height: 48px;
+}
+
+:global(.contenedorFijoBarraAppTab) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+:global(.contenedorFijoBarraAppTab) > * {
+    padding: 0px 25px;
+}
+
+:local(.contenedorAsistente) {
+    padding: 0 10px;
+}
+
+:local(.tabClasico) {
+    width: 100%;
+}
+
+:local(.tabCentrado) {
+    margin: auto;
+}
+
+:local(.botonTab) {
+    min-width: max-content;
+}

@@ -1,0 +1,21 @@
+:local(.columnaBotones) {
+    text-align: center;
+    white-space: nowrap;
+    padding: 0;
+}
+
+:local(.contenedorBotonColumna) {
+    left: -50px;
+    position: relative;
+}
+
+:local(.contenedorBotonColumna) > * {
+    margin: 0px;
+    z-index: 1;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+:local(.sinSeleccion) {
+    margin-left: 22px;
+}

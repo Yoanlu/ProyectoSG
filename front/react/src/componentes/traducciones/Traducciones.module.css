@@ -1,0 +1,16 @@
+form[disabled] :local(.boton),
+fieldset[disabled] :local(.boton) {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    :local(.contenedorTraduccion) {
+        margin-top: 7px;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+    }
+
+    :local(.contenedorTraduccion) + :local(.contenedorTraduccion) {
+        margin-top: 15px;
+    }
+}

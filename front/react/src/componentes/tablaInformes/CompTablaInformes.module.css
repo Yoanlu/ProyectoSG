@@ -1,0 +1,28 @@
+
+:local(.contenedorDatagrid) {
+    flex: 1;
+    min-height: 200px;
+    padding: 10px;
+    padding-top: 0;
+}
+
+:local(.cabeceraColumna) * {
+    white-space: break-spaces !important;
+}
+
+:local(.botonExpandir) {
+    pointer-events: none;
+}
+
+:local(.iconoExpandir) {
+    pointer-events: none;
+    transition: transform 0.5s;
+}
+
+:local(.alinearDerecha) {
+    text-align: right !important;
+}
+
+:global(.dx-selection) :local(.iconoExpandir) {
+    transform: rotate(90deg);
+}

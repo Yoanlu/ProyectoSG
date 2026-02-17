@@ -1,0 +1,136 @@
+:local(.contenedorAnimacion) {
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+:local(.mantenimiento),
+:local(.lista) {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+:local(.mantenimiento) {
+    width: 100%;
+    padding: 10px;
+}
+
+:local(.mantenimiento):has(:global(.sinPanel)) {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    :local(.mantenimiento) {
+        padding: 5px;
+    }
+}
+
+:local(.lista) {
+    bottom: 0;
+}
+
+:local(.contenedorVisible) {
+    animation-fill-mode: unset !important;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+:local(.contenedorNavegacion) {
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+:local(.navOculta) {
+    display: none;
+}
+
+:local(.contenedorConNavegacion) {
+    min-height: 350px;
+    flex: 1;
+}
+
+:local(.invisible) {
+    visibility: hidden;
+    position: absolute;
+    overflow: hidden;
+    height: 0px;
+}
+
+:local(.cargando) {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    margin: 15px 0;
+}
+
+:local(.cargando) > div {
+    margin-bottom: 10px;
+}
+
+:local(.mantListaEnEspera) {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+:local(.listaPrev),
+:local(.listaPrevMant),
+:local(.prevMantVisible),
+:local(.prevMant) {
+    will-change: transition;
+    transition: all 300ms ease;
+    margin: 0px;
+}
+
+:local(.prevMantVisible) > div {
+    will-change: transition;
+    transition: max-width 300ms ease;
+}
+
+:local(.listaPrev) {
+    width: 100%;
+    left: 0;
+}
+
+:local(.listaPrevMant) {
+    width: 34%;
+    left: 0;
+}
+
+div:local(.listaPrevCrud) {
+    width: 100%;
+    left: -100%;
+}
+
+:local(.prevMantVisible) {
+    width: calc(66% + 10px);
+    right: 0;
+    left: auto;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+:local(.prevMant) {
+    overflow: hidden;
+    width: 0%;
+    max-height: 100%;
+    right: 0;
+    left: auto;
+}
+
+:local(.prevMantVisible):not(:local(.prevMantCrud)) > div {
+    max-width: 100%;
+}
+
+div:local(.prevMantCrud) {
+    width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+}

@@ -1,0 +1,4 @@
+table td :local(.enlaceCorreo) {
+    font-weight: bolder;
+    line-height: unset;
+}

@@ -1,0 +1,10 @@
+:local(.columnaInterruptor) {
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: left !important;
+}
+
+:local(.columnaInterruptorCabecera) {
+    padding: 0 !important;
+    margin: auto;
+}

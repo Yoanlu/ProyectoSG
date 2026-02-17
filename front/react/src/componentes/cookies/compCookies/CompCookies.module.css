@@ -1,0 +1,12 @@
+:local(.contenedorCookies) {
+    padding: 15px;
+}
+
+:local(.panel) {
+    padding: inherit;
+    text-align: justify;
+}
+
+:local(.bloque) {
+    margin: 14px 0px;
+}

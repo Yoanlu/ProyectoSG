@@ -1,0 +1,92 @@
+:local(.barraAplicacion) {
+    z-index: 1000 !important;
+    position: fixed !important;
+}
+
+:local(.barraAplicacion) > div {
+    min-height: 64px;
+    max-height: 64px;
+}
+
+:local(.seccionBarraDerecha) {
+    justify-content: flex-end;
+    display: inline-flex;
+    flex: 1 1 auto;
+}
+
+:local(.botonAvatar) {
+    padding: 0px !important;
+}
+
+:local(.botonAvatar) img {
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50% !important;
+}
+
+:local(.popupContent) {
+    z-index: 1000;
+}
+
+:local(.popupWrapper) {
+    z-index: 1000;
+}
+
+:local(.contenedorLogo) {
+    flex: 1 1 auto;
+    justify-content: unset;
+    border: 1px solid red;
+    height: 46px;
+    margin: auto;
+}
+
+:local(.logo) {
+    height: 40px;
+    margin: auto;
+    cursor: pointer;
+    max-width: 200px;
+    margin-right: 12px !important;
+    object-fit: scale-down;
+}
+
+@media screen and (max-width: 768px) {
+    :local(.invisibleMovil) {
+        display: none;
+    }
+}
+
+:local(.degradadoSandav) {
+    background-image: linear-gradient(135deg, #5cc8ec 0%, #d45db0 50%, #f45e2c 100%) !important;
+}
+
+:local(.botonMenu) {
+    margin-left: -12px !important;
+    margin-right: 0px !important;
+}
+
+@media screen and (max-width: 960px) {
+    :local(.botonAvatar) img {
+        height: 30px;
+        width: 30px;
+    }
+
+    :local(.botonMenu) {
+        margin-right: 0px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :local(.barraAplicacion) > div {
+        min-height: 48px;
+        max-height: 48px;
+    }
+
+    :local(.contenedorLogo) {
+        height: 35px;
+    }
+
+    :local(.logo) {
+        height: 35px;
+    }
+}

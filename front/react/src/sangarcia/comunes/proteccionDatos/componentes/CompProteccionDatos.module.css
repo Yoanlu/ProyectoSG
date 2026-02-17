@@ -1,0 +1,8 @@
+:local(.contenedorProteccionDatos) {
+    padding: 1.5em;
+}
+
+:local(.panel) {
+    padding: inherit;
+    text-align: justify;
+}

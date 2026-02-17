@@ -1,0 +1,34 @@
+:local(.bloqueEntradaVideo) {
+    text-align: center;
+}
+
+:local(.contenedorEntradaVideo) {
+    display: inline-grid;
+}
+
+:local(.video) {
+    vertical-align: bottom;
+    margin: auto;
+    height: auto;
+    width: auto;
+    max-height: 250px;
+    max-width: 750px;
+}
+
+form[disabled] :local(.boton),
+fieldset[disabled] :local(.boton),
+:local(.entradaFichero) {
+    display: none;
+}
+
+:global(.soloLectura) :local(.boton) {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+    :local(.video) {
+        max-height: 150px;
+        max-width: 3000px;
+    }
+}

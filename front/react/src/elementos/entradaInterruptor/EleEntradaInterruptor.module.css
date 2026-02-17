@@ -1,0 +1,10 @@
+:local(.entradaInterruptor) {
+    padding-top: 8px;
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+}
+
+:local(.entradaInterruptorEnd) {
+    padding-top: 8px;
+    margin-left: -14px !important;
+}
