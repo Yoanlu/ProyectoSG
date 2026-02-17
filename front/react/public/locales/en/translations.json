@@ -119,6 +119,7 @@
     "email": "Email",
     "employee": "Employee",
     "employees": "Employees",
+    "end_date": "End date",
     "end_issue_date": "End issue date",
     "enterprise": "Enterprise",
     "enterprise_tax": "Enterprise Tax",
@@ -141,6 +142,7 @@
     "external_managers": "External Managers",
     "family_address": "Family address",
     "fax": "Fax",
+    "festivity": "Fertivity",
     "file": "File",
     "file_upload": "File upload",
     "filterable": "Filterable",
@@ -315,6 +317,7 @@
     "speciality": "Speciality",
     "stair": "Stair",
     "start_configuration": "Start configuration",
+    "start_date": "start date",
     "status": "Status",
     "street": "Street",
     "studies": "Studies",
@@ -386,8 +389,5 @@
     "work_type": "Work type",
     "work_types": "Work types",
     "yes": "Yes",
-    "zip_code": "Zip code",
-    "end_date": "End date",
-    "start_date": "start date",
-    "festivity": "Fertivity"
+    "zip_code": "Zip code"
 }

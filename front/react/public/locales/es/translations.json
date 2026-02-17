@@ -119,6 +119,7 @@
     "email": "Correo Electrónico",
     "employee": "Empleado",
     "employees": "Empleados",
+    "end_date": "Fecha fin",
     "end_issue_date": "Fecha de fin de incidencia",
     "enterprise": "Empresa",
     "enterprise_tax": "IVA Empresa",
@@ -141,6 +142,7 @@
     "external_managers": "Responsables Externos",
     "family_address": "Dirección familiar",
     "fax": "Fax",
+    "festivity": "Festividad",
     "file": "Fichero",
     "file_upload": "Carga de fichero",
     "filterable": "Filtrable",
@@ -315,6 +317,7 @@
     "speciality": "Especialidad",
     "stair": "Escalera",
     "start_configuration": "Configuración de inicio",
+    "start_date": "Fecha inicio",
     "status": "Estado",
     "street": "Calle",
     "studies": "Estudios",
@@ -386,8 +389,5 @@
     "work_type": "Tipo trabajos",
     "work_types": "Tipos trabajos",
     "yes": "Sí",
-    "zip_code": "Código Postal",
-    "end_date": "Fecha fin",
-    "start_date": "Fecha inicio",
-    "festivity": "Festividad"
+    "zip_code": "Código Postal"
 }
