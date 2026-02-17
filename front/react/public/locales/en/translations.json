@@ -386,5 +386,8 @@
     "work_type": "Work type",
     "work_types": "Work types",
     "yes": "Yes",
-    "zip_code": "Zip code"
+    "zip_code": "Zip code",
+    "end_date": "End date",
+    "start_date": "start date",
+    "festivity": "Fertivity"
 }
