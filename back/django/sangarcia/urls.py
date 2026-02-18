@@ -10,7 +10,8 @@ urlpatterns = [
     path('oauth/', include('oauth2_provider.urls', namespace='oauth2_provider')),
     
     path('api/v1/miembros/', include('miembros.urls')), 
-    path('api/v1/fiestas/', include('fiestas.urls')),
+    path('api/v1/fiestas/', include('fiestas.urls')), 
+    path('api/v1/actividades/', include('actividades.urls')),
 
     # endpoints api
     path('api/v1/seguridad/', include('seguridad.urls')),

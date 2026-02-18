@@ -38,7 +38,14 @@ function construyeMenu(permisos_recibidos) {
                 ruta: permisos.fiestas.ruta
             });
         }
-
+        //Actividades
+        haypermiso = permisos_recibidos.find(permiso => permiso === permisos.actividades.view);
+        if (haypermiso) {
+            general_opciones.push({
+                titulo: permisos.actividades.titulo,
+                ruta: permisos.actividades.ruta
+            });
+        }
     } else {
         menu.push({
             titulo: "login",

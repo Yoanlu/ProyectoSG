@@ -390,5 +390,11 @@
     "work_types": "Tipos trabajos",
     "yes": "Sí",
     "zip_code": "Código Postal",
-    "parties": "Fiestas"
+    "parties": "Fiestas",
+    "activities": "Actividades",
+    "duration": "Duración",
+    "party_id": "ID Fiesta",
+    "party": "Fiesta",
+    "fiesta": "Fiesta",
+    "select_option":"Elige una fiesta"
 }

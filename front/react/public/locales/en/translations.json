@@ -390,5 +390,11 @@
     "work_types": "Work types",
     "yes": "Yes",
     "zip_code": "Zip code",
-    "parties": "Parties"
+    "parties": "Parties",
+    "activities": "Activities",
+    "duration": "Duration",
+    "party_id": "Party ID",
+    "party": "Party",
+    "fiesta": "Party",
+    "select_option":"Select a party"
 }

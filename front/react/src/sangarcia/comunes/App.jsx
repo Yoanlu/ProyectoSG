@@ -30,6 +30,7 @@ const VistaUsuario = lazy(() => import("../usuarios/vistas/VistaUsuario"));
 const VistaCambiaPassword = lazy(() => import("../../componentes/formularios/cambiaPassword/vistas/VistaCambiaPassword"));
 const VistaMiembros = lazy(() => import("../miembros/vistas/VistaMiembros"));
 const VistaFiestas = lazy(() => import("../fiestas/vistas/VistaFiestas"));
+const VistaActividades = lazy(() => import("../actividades/vistas/VistaActividades"));
 
 class App extends React.Component {
     constructor(props) {
@@ -136,27 +137,38 @@ class App extends React.Component {
                                                     />
 
                                                     <Route exact path={permisos.auth.user.ruta} render={props => <VistaUsuario {...props} />} />
-                                                    <Route 
-                                                        exact 
-                                                        path={permisos.miembros.ruta} 
+                                                    <Route
+                                                        exact
+                                                        path={permisos.miembros.ruta}
                                                         render={props => (
-                                                            <VistaMiembros 
-                                                                {...props} 
+                                                            <VistaMiembros
+                                                                {...props}
                                                                 permisos={this.state.permisos} // <--- ES FUNDAMENTAL PASAR ESTO
-                                                                funcionControlPeticion={this.datosPeticiones.peticionServidor} 
+                                                                funcionControlPeticion={this.datosPeticiones.peticionServidor}
                                                             />
-                                                        )} 
+                                                        )}
                                                     />
-                                                    <Route 
-                                                        exact 
-                                                        path={permisos.fiestas.ruta} 
+                                                    <Route
+                                                        exact
+                                                        path={permisos.fiestas.ruta}
                                                         render={props => (
-                                                            <VistaFiestas 
-                                                                {...props} 
+                                                            <VistaFiestas
+                                                                {...props}
                                                                 permisos={this.state.permisos} // <--- ES FUNDAMENTAL PASAR ESTO
-                                                                funcionControlPeticion={this.datosPeticiones.peticionServidor} 
+                                                                funcionControlPeticion={this.datosPeticiones.peticionServidor}
                                                             />
-                                                        )} 
+                                                        )}
+                                                    />
+                                                    <Route
+                                                        exact
+                                                        path={permisos.actividades.ruta}
+                                                        render={props => (
+                                                            <VistaActividades
+                                                                {...props}
+                                                                permisos={this.state.permisos} // <--- ES FUNDAMENTAL PASAR ESTO
+                                                                funcionControlPeticion={this.datosPeticiones.peticionServidor}
+                                                            />
+                                                        )}
                                                     />
                                                 </Suspense>
                                             </CompMenuNavegacion>

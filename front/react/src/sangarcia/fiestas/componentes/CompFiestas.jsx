@@ -65,17 +65,6 @@ class CompFiestas extends CompPermisos {
                         funcionOnChange={this.funcionOnChangeTexto}
                     />
                 </div>
-                <div className={"col-sm-12 col-md-6 " + estilos.entradaTexto}>
-                    <CompEntrada
-                        tipoEntrada="EntradaTexto"
-                        obligatorio={true}
-                        etiqueta={this.props.traduccion("activity")}
-                        maximo={100}
-                        nombre="actividad"
-                        valor={this.props.datoEnEdicion.actividad || ""}
-                        funcionOnChange={this.funcionOnChangeTexto}
-                    />
-                </div>
             </div>
         );
     }

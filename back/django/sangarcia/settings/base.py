@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'desplegables', 
     'miembros',
     'fiestas',
+    'actividades',
 ]
 
 OAUTH2_PROVIDER = {

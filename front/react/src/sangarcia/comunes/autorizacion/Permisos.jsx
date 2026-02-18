@@ -79,7 +79,7 @@ const permisos = {
         change: "miembros.change_miembro",
         delete: "miembros.delete_miembro",
         titulo: "members", // Clave para la traducción
-        ruta: "/miembros"  // La URL en el navegador
+        ruta: "/miembros" // La URL en el navegador
     },
 
     fiestas: {
@@ -88,9 +88,17 @@ const permisos = {
         change: "fiestas.change_fiesta",
         delete: "fiestas.delete_fiesta",
         titulo: "parties", // Clave para la traducción
-        ruta: "/fiestas"  // La URL en el navegador
-    }
+        ruta: "/fiestas" // La URL en el navegador
+    },
 
+    actividades: {
+        view: "actividades.view_actividad",
+        add: "actividades.add_actividad",
+        change: "actividades.change_actividad",
+        delete: "actividades.delete_actividad",
+        titulo: "activities",
+        ruta: "/actividades"
+    }
 };
 
 export default permisos;
