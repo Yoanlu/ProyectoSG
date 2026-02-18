@@ -47,7 +47,7 @@ class CompFiestas extends CompPermisos {
                 </div>
                 <div className={"col-sm-12 col-md-6 " + estilos.entradaTexto}>
                     <CompEntrada
-                        tipoEntrada="DateTimePicker" 
+                        tipoEntrada="EntradaFecha"
                         obligatorio={true}
                         etiqueta={this.props.traduccion("start_date")}
                         nombre="inicio"
@@ -57,7 +57,7 @@ class CompFiestas extends CompPermisos {
                 </div>
                 <div className={"col-sm-12 col-md-6 " + estilos.entradaTexto}>
                     <CompEntrada
-                        tipoEntrada="DateTimePicker"
+                        tipoEntrada="EntradaFecha"
                         obligatorio={true}
                         etiqueta={this.props.traduccion("end_date")}
                         nombre="fin"
