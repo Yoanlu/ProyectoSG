@@ -98,6 +98,15 @@ const permisos = {
         delete: "actividades.delete_actividad",
         titulo: "activities",
         ruta: "/actividades"
+    },
+
+    asistencias: {
+        view: "asistencias.view_asistencia",
+        add: "asistencias.add_asistencia",
+        change: "asistencias.change_asistencia",
+        delete: "asistencias.delete_asistencia",
+        titulo: "assists",
+        ruta: "/asistencias"
     }
 };
 

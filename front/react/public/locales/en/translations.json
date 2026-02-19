@@ -27,6 +27,7 @@
     "annual_payments": "Annual payments",
     "another_hobby": "Another hobby",
     "approved_avatar": "Approved avatar",
+    "assists": "Assists",
     "attachment": "Attachment",
     "attachments": "Attachments",
     "average_price": "Average price",
@@ -212,6 +213,7 @@
     "managment_amount": "Managment amount",
     "maturities": "Maturities",
     "maturity": "Maturity",
+    "member": "Member",
     "members": "Members",
     "minimal": "Minimal",
     "minimal_days": "Minimal days",
@@ -396,5 +398,6 @@
     "work_type": "Work type",
     "work_types": "Work types",
     "yes": "Yes",
-    "zip_code": "Zip code"
+    "zip_code": "Zip code",
+    "attendees": "Attendees"
 }

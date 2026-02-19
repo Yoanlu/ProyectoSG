@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'miembros',
     'fiestas',
     'actividades',
+    'asistencias',
 ]
 
 OAUTH2_PROVIDER = {

@@ -12,6 +12,7 @@ urlpatterns = [
     path('api/v1/miembros/', include('miembros.urls')), 
     path('api/v1/fiestas/', include('fiestas.urls')), 
     path('api/v1/actividades/', include('actividades.urls')),
+    path('api/v1/asistencias/', include('asistencias.urls')),
 
     # endpoints api
     path('api/v1/seguridad/', include('seguridad.urls')),

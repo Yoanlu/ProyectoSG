@@ -31,6 +31,7 @@ const VistaCambiaPassword = lazy(() => import("../../componentes/formularios/cam
 const VistaMiembros = lazy(() => import("../miembros/vistas/VistaMiembros"));
 const VistaFiestas = lazy(() => import("../fiestas/vistas/VistaFiestas"));
 const VistaActividades = lazy(() => import("../actividades/vistas/VistaActividades"));
+const VistaAsistencias = lazy(() => import("../asistencias/vistas/VistaAsistencias"));
 
 class App extends React.Component {
     constructor(props) {
@@ -164,6 +165,17 @@ class App extends React.Component {
                                                         path={permisos.actividades.ruta}
                                                         render={props => (
                                                             <VistaActividades
+                                                                {...props}
+                                                                permisos={this.state.permisos} // <--- ES FUNDAMENTAL PASAR ESTO
+                                                                funcionControlPeticion={this.datosPeticiones.peticionServidor}
+                                                            />
+                                                        )}
+                                                    />
+                                                    <Route
+                                                        exact
+                                                        path={permisos.asistencias.ruta}
+                                                        render={props => (
+                                                            <VistaAsistencias
                                                                 {...props}
                                                                 permisos={this.state.permisos} // <--- ES FUNDAMENTAL PASAR ESTO
                                                                 funcionControlPeticion={this.datosPeticiones.peticionServidor}

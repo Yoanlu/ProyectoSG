@@ -1,6 +1,9 @@
 import permisos from "../../sangarcia/comunes/autorizacion/Permisos";
 
 function construyeMenu(permisos_recibidos) {
+    console.log("--- DEPURACIÓN DE MENÚ ---");
+    console.log("1. Permisos que llegan del servidor:", permisos_recibidos);
+    console.log("2. Permiso que busco para Asistencias:", permisos.asistencias.view);
     let menu = [
         // {
         //     titulo: 'home',
@@ -44,6 +47,14 @@ function construyeMenu(permisos_recibidos) {
             general_opciones.push({
                 titulo: permisos.actividades.titulo,
                 ruta: permisos.actividades.ruta
+            });
+        }
+        //Asistencias
+        haypermiso = permisos_recibidos.find(permiso => permiso === permisos.asistencias.view);
+        if (haypermiso) {
+            general_opciones.push({
+                titulo: permisos.asistencias.titulo,
+                ruta: permisos.asistencias.ruta
             });
         }
     } else {

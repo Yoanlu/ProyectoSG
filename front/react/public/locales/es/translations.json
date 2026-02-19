@@ -7,6 +7,7 @@
     "active": "Activo",
     "active_departments": "Departamentos activos",
     "active_user": "Usuario Activo",
+    "actividades": "Actividades",
     "activities": "Actividades",
     "activity": "Actividad",
     "add": "Añadir",
@@ -27,6 +28,7 @@
     "annual_payments": "Número de pagas",
     "another_hobby": "Otras aficiones",
     "approved_avatar": "Avatar aprobado",
+    "assists": "Asistencias",
     "attachment": "Adjunto",
     "attachments": "Adjuntos",
     "average_price": "Precio Medio",
@@ -146,6 +148,7 @@
     "fax": "Fax",
     "festivity": "Festividad",
     "fiesta": "Fiesta",
+    "fiestas": "Fiestas",
     "file": "Fichero",
     "file_upload": "Carga de fichero",
     "filterable": "Filtrable",
@@ -212,6 +215,7 @@
     "managment_amount": "Importe gestión",
     "maturities": "Vencimientos",
     "maturity": "Vencimiento",
+    "member": "Miembro",
     "members": "Miembros",
     "minimal": "Minimos",
     "minimal_days": "Días mínimos",
@@ -396,5 +400,6 @@
     "work_type": "Tipo trabajos",
     "work_types": "Tipos trabajos",
     "yes": "Sí",
-    "zip_code": "Código Postal"
+    "zip_code": "Código Postal",
+    "attendees": "Asistentes"
 }
