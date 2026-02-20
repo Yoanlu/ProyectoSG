@@ -1,0 +1,36 @@
+:local(.contenedor) {
+}
+:local(.boton) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:local(.margenSuperior) {
+    margin-top: 20px;
+}
+
+:local(.borderIzquierdo) {
+    position: relative;
+}
+:local(.borderIzquierdo)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 25%;
+    height: 50%;
+    width: 1px;
+    background: #d9d9d9;
+}
+:local(.borderDerecho) {
+    position: relative;
+}
+:local(.borderDerecho)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 25%;
+    height: 50%;
+    width: 1px;
+    background: #d9d9d9;
+}

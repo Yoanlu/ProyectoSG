@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'fiestas',
     'actividades',
     'asistencias',
+    'django_filters',
 ]
 
 OAUTH2_PROVIDER = {

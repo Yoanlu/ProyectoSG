@@ -1,33 +1,33 @@
 import { peticionServidor } from "../../comunes/api/Api";
 
 const guardarFiesta = async function(datos, historia) {
-    let puntoFinal = "fiestas/"; 
+    let puntoFinal = "fiestas/";
     let metodo = "POST";
 
     if (datos.id) {
         metodo = "PUT";
-        
-        puntoFinal = "fiestas/" + datos.id + "/"; 
+
+        puntoFinal = "fiestas/" + datos.id + "/";
     }
     let llamada = await peticionServidor(metodo, puntoFinal, datos, historia);
     return llamada;
 };
 
-const recuperarListaFiesta = async function(historia) {
-    let puntoFinal = "fiestas/"; 
+const recuperarListaFiesta = async function(historia, filtros = "") {
+    let puntoFinal = "fiestas" + (filtros && filtros.length > 1 ? filtros : "");
+
     let llamada = await peticionServidor("GET", puntoFinal, null, historia);
     return llamada;
 };
 
 const recuperarDatosFiesta = async function(id, historia) {
-    
-    let puntoFinal = "fiestas/" + id + "/"; 
+    let puntoFinal = "fiestas/" + id + "/";
     let llamada = await peticionServidor("GET", puntoFinal, null, historia);
     return llamada;
 };
 
 const borrarFiesta = async function(id, historia) {
-    let puntoFinal = "fiestas/" + id + "/"; 
+    let puntoFinal = "fiestas/" + id + "/";
     let llamada = await peticionServidor("DELETE", puntoFinal, null, historia);
     return llamada;
 };

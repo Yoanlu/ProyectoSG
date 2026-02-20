@@ -8,6 +8,7 @@
     "active_departments": "Departamentos activos",
     "active_user": "Usuario Activo",
     "actividades": "Actividades",
+    "actividades__nombre": "Nombre Actividad",
     "activities": "Actividades",
     "activity": "Actividad",
     "add": "Añadir",
@@ -31,6 +32,7 @@
     "assists": "Asistencias",
     "attachment": "Adjunto",
     "attachments": "Adjuntos",
+    "attendees": "Asistentes",
     "average_price": "Precio Medio",
     "background_color_calendar": "Color de Fondo",
     "bad_credentials": "Las credenciales son erroneas",
@@ -146,6 +148,7 @@
     "external_managers": "Responsables Externos",
     "family_address": "Dirección familiar",
     "fax": "Fax",
+    "festividad": "Festividad",
     "festivity": "Festividad",
     "fiesta": "Fiesta",
     "fiestas": "Fiestas",
@@ -153,6 +156,8 @@
     "file_upload": "Carga de fichero",
     "filterable": "Filtrable",
     "filtered_rows": "Filtradas",
+    "filtro_fiestas": "Filtro Fiestas",
+    "fin": "Fin",
     "first_name": "Nombre",
     "fiscal_year": "Ejercicio",
     "floor": "Piso",
@@ -170,6 +175,7 @@
     "image": "Imagen",
     "in_out": "Entrada salida",
     "incoming_arrivals": "Próximas llegadas",
+    "inicio": "Inicio",
     "invalid_bic": "El identificador BIC no es valido.",
     "invalid_document": "El documento no es válido",
     "invalid_iban": "El identificador IBAN no es valido.",
@@ -400,6 +406,5 @@
     "work_type": "Tipo trabajos",
     "work_types": "Tipos trabajos",
     "yes": "Sí",
-    "zip_code": "Código Postal",
-    "attendees": "Asistentes"
+    "zip_code": "Código Postal"
 }
