@@ -14,7 +14,7 @@ const guardarFiesta = async function(datos, historia) {
 };
 
 const recuperarListaFiesta = async function(historia, filtros = "") {
-    let puntoFinal = "fiestas" + (filtros && filtros.length > 1 ? filtros : "");
+    let puntoFinal = "fiestas/" + filtros;
 
     let llamada = await peticionServidor("GET", puntoFinal, null, historia);
     return llamada;
