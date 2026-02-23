@@ -1,0 +1,177 @@
+:local(.contenedorEntradaFichero) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+:local(.dropZone) {
+    border: 2px dashed #1976d2;
+    border-radius: 8px;
+    padding: 40px 20px;
+    text-align: center;
+    /* background-color: #f5f5f5;*/
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+:local(.dropZone):hover {
+    background-color: #c0c0c0;
+    border-color: #1565c0;
+}
+
+:local(.dropZone.arrastrando) {
+    background-color: #c0c0c0;
+    border-color: #0d47a1;
+    border-style: solid;
+    transform: scale(1.02);
+}
+
+:local(.dropZone.desactivado) {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #eeeeee;
+}
+
+:local(.contenidoDropZone) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+:local(.iconoUpload) {
+    font-size: 64px !important;
+    color: #1976d2;
+    margin-bottom: 10px;
+}
+
+:local(.textoDropZone) {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}
+
+:local(.botonSeleccionar) {
+    margin: 10px 0 !important;
+}
+
+:local(.infoFormato) {
+    margin: 5px 0 0 0;
+    font-size: 12px;
+    color: #999;
+}
+
+:local(.contenedorFicheros) {
+    background-color: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+:local(.tituloArchivos) {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+:local(.contenidoFichero) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+:local(.contenidoFichero) + :local(.contenidoFichero) {
+    margin-top: 8px;
+}
+
+:local(.contenidoFichero):hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+:local(.iconoFichero) {
+    color: #1976d2;
+    font-size: 24px !important;
+}
+
+:local(.nombreFichero) {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+    word-break: break-word;
+}
+
+:local(.botonBorrar) {
+    min-width: auto !important;
+    padding: 6px !important;
+}
+
+:local(.cargando) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+}
+
+:local(.mensajeError) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background-color: #ffebee;
+    border: 1px solid #ef5350;
+    border-radius: 4px;
+    color: #c62828;
+    font-size: 14px;
+}
+
+:local(.mensajeError) .material-icons {
+    color: #ef5350;
+}
+
+:local(.entradaFichero) {
+    display: none;
+}
+
+form[disabled] :local(.botonSeleccionar),
+form[disabled] :local(.botonBorrar),
+fieldset[disabled] :local(.botonSeleccionar),
+fieldset[disabled] :local(.botonBorrar) {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+:global(.soloLectura) :local(.botonSeleccionar),
+:global(.soloLectura) :local(.botonBorrar) {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    :local(.dropZone) {
+        padding: 30px 15px;
+    }
+
+    :local(.iconoUpload) {
+        font-size: 48px !important;
+    }
+
+    :local(.textoDropZone) {
+        font-size: 14px;
+    }
+}

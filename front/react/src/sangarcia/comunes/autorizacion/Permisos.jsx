@@ -71,15 +71,22 @@ const permisos = {
         }
     },
 
-    // Ejemplo de cómo debería estar en Permisos.jsx
-    // ... dentro del objeto permisos
+    // En Permisos.js
     miembros: {
         view: "miembros.view_miembro",
         add: "miembros.add_miembro",
         change: "miembros.change_miembro",
         delete: "miembros.delete_miembro",
-        titulo: "members", // Clave para la traducción
-        ruta: "/miembros" // La URL en el navegador
+        titulo: "members",
+        ruta: "/miembros",
+
+        // ESTE ES EL BLOQUE QUE FALTA:
+        documentos: {
+            view: "miembros.view_miembrodocumento",
+            add: "miembros.add_miembrodocumento",
+            change: "miembros.change_miembrodocumento",
+            delete: "miembros.delete_miembrodocumento"
+        }
     },
 
     fiestas: {
