@@ -404,5 +404,10 @@
     "work_type": "Work type",
     "work_types": "Work types",
     "yes": "Yes",
-    "zip_code": "Zip code"
+    "zip_code": "Zip code",
+    "member_data": "Member Data",
+    "documents": "Documents",
+    "miembros": "Members",
+    "tipo_documento": "Document tipe",
+    "nombre": "Name"
 }

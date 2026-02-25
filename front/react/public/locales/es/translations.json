@@ -406,5 +406,10 @@
     "work_type": "Tipo trabajos",
     "work_types": "Tipos trabajos",
     "yes": "Sí",
-    "zip_code": "Código Postal"
+    "zip_code": "Código Postal",
+    "member_data": "Datos Miembro",
+    "documents": "Documentos",
+    "miembros": "Miembros",
+    "tipo_documento": "Tipo documento",
+    "nombre": "Nombre"
 }
