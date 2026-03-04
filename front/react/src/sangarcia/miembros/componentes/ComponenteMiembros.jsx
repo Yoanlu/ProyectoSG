@@ -9,6 +9,7 @@ import CompTabulacion from "../../../componentes/tabulaciones/CompTabulacion"; /
 import CompDocumentosMiembro from "./CompDocumentosMiembro"; // El componente de la tabla
 import CompPopupDocumento from "./CompPopupDocumento"; // El popup para subir
 import { crearDocumentoMiembro } from "../servicios/ServicioMiembroDocumento"; // El servicio
+import { recuperarListaMiembro } from "../servicios/ServicioMiembros";
 
 class CompMiembros extends CompPermisos {
     static propTypes = {
@@ -31,7 +32,8 @@ class CompMiembros extends CompPermisos {
         this.refDocumentos = React.createRef();
 
         this.state = {
-            mostrarPopupDocumento: false
+            mostrarPopupDocumento: false,
+            listaMiembros: []
         };
     }
 
@@ -75,6 +77,13 @@ class CompMiembros extends CompPermisos {
             }
         }
     };
+
+    async componentDidMount() {
+        let datosListaAjax = await recuperarListaMiembro(this.props.history);
+        if (datosListaAjax.codigo === 200) {
+            this.setState({ listaMiembros: datosListaAjax.respuesta });
+        }
+    }
 
     render() {
         return (
@@ -123,6 +132,56 @@ class CompMiembros extends CompPermisos {
                                 maximo={100}
                                 nombre="tarea"
                                 valor={this.props.datoEnEdicion.tarea || ""}
+                                funcionOnChange={this.funcionOnChangeTexto}
+                            />
+                        </div>
+
+                        <div className={"col-sm-12 col-md-6 " + estilos.entradaTexto}>
+                            <CompEntrada
+                                tipoEntrada="EntradaTexto"
+                                obligatorio={false} // En Django le pusiste blank=True, null=True
+                                etiqueta={this.props.traduccion("dni") || "DNI"}
+                                maximo={9} // Coincide con el max_length de Django
+                                nombre="dni"
+                                valor={this.props.datoEnEdicion.dni || ""}
+                                funcionOnChange={this.funcionOnChangeTexto}
+                            />
+                        </div>
+
+                        {/* Nuevo campo Pagador (Menú desplegable) */}
+                        <div className={"col-sm-12 col-md-6 " + estilos.entradaTexto}>
+                            {/* Si usas estilos.etiqueta en tu CSS, genial. Si no, quítalo */}
+                            <label className={estilos.etiqueta}>{this.props.traduccion("payer") || "Responsable de pago"}</label>
+                            <select
+                                className="form-control"
+                                value={this.props.datoEnEdicion.pagador || ""}
+                                onChange={e => this.funcionOnChangeTexto(e.target.value, "pagador")}
+                                // No le ponemos 'required' porque en Django le pusiste null=True, blank=True
+                            >
+                                <option value="">-- Sin responsable (Paga él mismo) --</option>
+
+                                {this.state.listaMiembros.map(miembro => {
+                                    if (this.props.datoEnEdicion.id && miembro.id === this.props.datoEnEdicion.id) {
+                                        return null;
+                                    }
+                                    return (
+                                        <option key={miembro.id} value={miembro.id}>
+                                            {miembro.nombre} {miembro.apellido}
+                                        </option>
+                                    );
+                                })}
+                            </select>
+                        </div>
+
+                        {/* Nuevo campo IMPORTE */}
+                        <div className={"col-sm-12 col-md-6 " + estilos.entradaTexto}>
+                            <CompEntrada
+                                tipoEntrada="EntradaTexto"
+                                obligatorio={true}
+                                etiqueta={this.props.traduccion("amount") || "Importe"}
+                                maximo={10}
+                                nombre="importe"
+                                valor={this.props.datoEnEdicion.importe || 0} // Por defecto 0
                                 funcionOnChange={this.funcionOnChangeTexto}
                             />
                         </div>

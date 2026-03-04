@@ -6,14 +6,52 @@ import logging
 
 logger = logging.getLogger(__name__)
 class Miembro(models.Model):
+    dni = models.CharField(max_length=9, blank=True, null=True)
     nombre = models.CharField(max_length=100)
     apellido = models.CharField(max_length=100)
     email = models.EmailField(unique=True)
     tarea = models.CharField(max_length=100)
+
+    pagador = models.ForeignKey(
+        'self', 
+        on_delete=models.SET_NULL, 
+        null=True, 
+        blank=True, 
+        related_name='miembros_a_cargo',
+        verbose_name=_("Responsable del pago")
+    )
+
+    importe = models.DecimalField(max_digits=10, decimal_places=2, default=0) 
     
     def __str__(self):
         return f"{self.nombre} {self.apellido}"
     
+    @property
+    def nombre_completo(self):
+        """Propiedad para obtener el nombre sin invocar métodos en el serializador"""
+        return f"{self.nombre} {self.apellido}"
+    
+    @property
+    def es_dependiente(self):
+        return self.pagador is not None
+
+    def obtener_pagador_final(self):
+        return self.pagador if self.pagador else self
+    
+    def total_a_pagar(self):
+        # Ahora el nombre coincide: self.importe
+        total = self.importe
+        # Suma el importe de todos los que tiene a cargo
+        total += sum(miembro.importe for miembro in self.miembros_a_cargo.all())
+        return total
+
+    # RECOMENDACIÓN: Evita que alguien se asigne a sí mismo como pagador
+    def clean(self):
+        from django.core.exceptions import ValidationError
+        if self.pagador == self:
+            raise ValidationError(_("Un miembro no puede ser su propio responsable de pago."))
+        
+
     
 def ruta_documentos_miembro(instance, filename):
     # Organiza los archivos en carpetas por el ID del miembro

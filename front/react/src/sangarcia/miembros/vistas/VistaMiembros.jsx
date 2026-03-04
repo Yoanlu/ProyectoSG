@@ -25,7 +25,11 @@ class VistaMiembros extends CompPermisos {
     cabeceraLista = [
         { campo: "nombre", titulo: "name" },
         { campo: "apellido", titulo: "last_name" },
-        { campo: "email", titulo: "email" }
+        { campo: "email", titulo: "email" },
+        { campo: "dni", titulo: "DNI" },
+        { campo: "pagador_nombre", titulo: "pagador" },
+        { campo: "importe", titulo: "importe" },
+        { campo: "total_pago", titulo: "total_pago" }
     ];
 
     funcionRecuperarLista = async () => {
@@ -37,7 +41,9 @@ class VistaMiembros extends CompPermisos {
         return controlPeticion;
     };
 
-    cambiaEstados = estadoCambiar => { this.setState(estadoCambiar); };
+    cambiaEstados = estadoCambiar => {
+        this.setState(estadoCambiar);
+    };
 
     guardar = async () => {
         let datoEnEdicion = clonar(this.state.datoEnEdicion);

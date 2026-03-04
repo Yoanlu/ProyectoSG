@@ -20,9 +20,15 @@ class MiembroDocumentoSerializer(serializers.ModelSerializer):
         return value
 
 class MiembroSerializer(serializers.ModelSerializer):
-    # Esto permite ver los documentos dentro del JSON del miembro (lectura)
     documentos = MiembroDocumentoSerializer(many=True, read_only=True)
+    pagador_nombre = serializers.ReadOnlyField(source='pagador.nombre_completo')
+    total_pago = serializers.ReadOnlyField(source='total_a_pagar')
 
     class Meta:
         model = Miembro
-        fields = ['id', 'nombre', 'apellido', 'email', 'tarea', 'documentos']
+        # AÑADE 'pagador' e 'importe' a esta lista:
+        fields = [
+            'id', 'dni', 'nombre', 'apellido', 'email', 'tarea', 
+            'documentos', 'pagador_nombre', 'total_pago', 
+            'pagador', 'importe'
+        ]
