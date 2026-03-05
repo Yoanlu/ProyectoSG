@@ -26,7 +26,6 @@ class MiembroSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Miembro
-        # AÑADE 'pagador' e 'importe' a esta lista:
         fields = [
             'id', 'dni', 'nombre', 'apellido', 'email', 'tarea', 
             'documentos', 'pagador_nombre', 'total_pago', 

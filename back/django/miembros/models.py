@@ -39,13 +39,11 @@ class Miembro(models.Model):
         return self.pagador if self.pagador else self
     
     def total_a_pagar(self):
-        # Ahora el nombre coincide: self.importe
         total = self.importe
         # Suma el importe de todos los que tiene a cargo
         total += sum(miembro.importe for miembro in self.miembros_a_cargo.all())
         return total
 
-    # RECOMENDACIÓN: Evita que alguien se asigne a sí mismo como pagador
     def clean(self):
         from django.core.exceptions import ValidationError
         if self.pagador == self:

@@ -1,3 +1,11 @@
 .panelMantenimiento {
     width: 500px;
 }
+.botonDescarga {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

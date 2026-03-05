@@ -63,28 +63,58 @@ class VistaMiembros extends CompPermisos {
         return datoActualizado.respuesta;
     };
 
+    descargarJSON = () => {
+        const datosExportar = this.state.datosLista.map(miembro => ({
+            dni: miembro.dni || "Sin DNI",
+            nombre: `${miembro.nombre} ${miembro.apellido}`,
+            total_a_pagar: miembro.total_pago
+        }));
+
+        const jsonString = JSON.stringify(datosExportar, null, 2);
+
+        const blob = new Blob([jsonString], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+
+        const enlace = document.createElement("a");
+        enlace.href = url;
+        enlace.download = "cuotas_miembros.json"; // El nombre del archivo que se descargará
+        document.body.appendChild(enlace);
+        enlace.click();
+
+        document.body.removeChild(enlace);
+        URL.revokeObjectURL(url);
+    };
+
     render() {
         return (
-            <CompMantenimientoLista
-                cambiaEstados={this.cambiaEstados}
-                datos={this.state.datosLista}
-                datoEnEdicion={this.state.datoEnEdicion}
-                edicionVisible={this.state.edicionVisible}
-                modificar={this.permiso.modificar}
-                añadir={this.permiso.añadir}
-                eliminar={this.permiso.borrar}
-                funcionRecuperarLista={this.funcionRecuperarLista}
-                funcionGuardar={this.guardar}
-                funcionGuardarEliminado={this.funcionGuardarEliminado}
-                cabecera={this.cabeceraLista}
-                componenteMantenimiento={CompMiembros}
-                campoOrdenacion="apellido"
-                sentidoOrdenacion="asc"
-                objetosListados="miembros"
-                estiloPanel={estilos.panelMantenimiento}
-                funcionControlPeticion={this.props.funcionControlPeticion}
-                listaRedimensionable={false}
-            />
+            <React.Fragment>
+                <div style={{ marginBottom: "15px", textAlign: "right" }}>
+                    <button className={estilos.botonDescarga} onClick={this.descargarJSON}>
+                        Descargar JSON
+                    </button>
+                </div>
+
+                <CompMantenimientoLista
+                    cambiaEstados={this.cambiaEstados}
+                    datos={this.state.datosLista}
+                    datoEnEdicion={this.state.datoEnEdicion}
+                    edicionVisible={this.state.edicionVisible}
+                    modificar={this.permiso.modificar}
+                    añadir={this.permiso.añadir}
+                    eliminar={this.permiso.borrar}
+                    funcionRecuperarLista={this.funcionRecuperarLista}
+                    funcionGuardar={this.guardar}
+                    funcionGuardarEliminado={this.funcionGuardarEliminado}
+                    cabecera={this.cabeceraLista}
+                    componenteMantenimiento={CompMiembros}
+                    campoOrdenacion="apellido"
+                    sentidoOrdenacion="asc"
+                    objetosListados="miembros"
+                    estiloPanel={estilos.panelMantenimiento}
+                    funcionControlPeticion={this.props.funcionControlPeticion}
+                    listaRedimensionable={false}
+                />
+            </React.Fragment>
         );
     }
 }
