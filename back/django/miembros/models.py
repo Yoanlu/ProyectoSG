@@ -39,8 +39,11 @@ class Miembro(models.Model):
         return self.pagador if self.pagador else self
     
     def total_a_pagar(self):
-        total = self.importe
         # Suma el importe de todos los que tiene a cargo
+        if self.pagador is not None:
+            return 0
+        
+        total = self.importe
         total += sum(miembro.importe for miembro in self.miembros_a_cargo.all())
         return total
 

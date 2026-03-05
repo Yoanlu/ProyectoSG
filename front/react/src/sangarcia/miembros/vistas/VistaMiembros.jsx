@@ -64,7 +64,8 @@ class VistaMiembros extends CompPermisos {
     };
 
     descargarJSON = () => {
-        const datosExportar = this.state.datosLista.map(miembro => ({
+        const datosFiltrados = this.state.datosLista.filter(miembro => miembro.total_pago > 0);
+        const datosExportar = datosFiltrados.map(miembro => ({
             dni: miembro.dni || "Sin DNI",
             nombre: `${miembro.nombre} ${miembro.apellido}`,
             total_a_pagar: miembro.total_pago
